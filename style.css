@@ -1,0 +1,169 @@
+/* Universal Styles */
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+  
+  .main-content {
+    position: relative;
+    top: 5.3125rem; /* To offset for fixed header. */
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .button {
+    border-radius: 4px;
+    background-color: #4a4a4a;
+    color: white;
+  }
+
+  @media only screen and (max-width: 895px) {
+    .main-content {
+      top: 2.5625rem;
+    }
+  }
+  
+  /* Header */
+  
+  header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+  }
+  
+  header .content {
+    display: flex;
+    align-items: center;
+    padding: 1.875rem;
+  }
+  
+  header .logo {
+    flex: 2;
+    font-size: 2rem;
+    color: #4a4a4a;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  header nav ul {
+    display: flex inline;
+  }
+  
+  nav li {
+    padding-left: 0.5rem;
+  }
+  
+  nav a {
+    vertical-align: bottom;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4a4a4a;
+  }
+
+  
+  header .icon {
+    width: 1rem;
+    padding-left: .75rem;
+  }
+  
+  header .mobile {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 895px) {
+    nav li:last-child {
+      display: block;
+    }
+  
+    header .content {
+      padding: 1rem 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    header .desktop {
+      display: none;
+    }
+  
+    header .mobile {
+      display: block;
+      width: 100%;
+    }
+  
+    header .content {
+      padding: .5rem 0;
+    }
+  
+    header .mobile ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+  
+    header .mobile li {
+      padding: 0;
+    }
+  }
+  
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 40rem;
+    background-image: url('./photo.jpeg');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    color: white;
+    
+    top: 150px;
+    left: 0;
+    padding: 0 5rem 2.5rem 5rem;
+    border: solid 1px #979797;
+    border-radius: 4px;
+    background-color: lightblue;
+  }
+  
+  .main-content h1 {
+    font-size: 2rem;
+  }
+  
+  .main-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  
+  @media only screen and (max-width: 895px) {
+    .main-content {
+      align-items: center;
+      flex-direction: column;
+      height: 30rem;
+    }
+  
+
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .main-content {
+      height: 20rem;
+      flex-direction: column;
+      align-items: center;
+      background-color: lightblue;
+    }
+  
+    .main-content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .main-content h2 {
+      font-size: 1rem;
+    }
+  }
+  
